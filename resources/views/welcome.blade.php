@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <livewire:salut-monde />
+    <livewire:counter />
 </body>
 
 </html>
