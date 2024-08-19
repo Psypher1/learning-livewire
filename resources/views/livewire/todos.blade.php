@@ -5,8 +5,8 @@
             {{-- modifiers will enable live updates --}}
             {{-- wire:model.live --}}
             {{-- wire:model.change - when tabbed away --}}
-            <input type="text" wire:model="todo">
-            <button>Add todo</button>
+            <input type="text" wire:model="todo" style="padding-inline: .5rem; padding-block: .3rem">
+            <button style="padding-inline: .5rem; padding-block: .3rem">Add todo</button>
         </form>
         <p>Current todo: {{ $todo }}</p>
         <ul>

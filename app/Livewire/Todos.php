@@ -7,10 +7,30 @@ use Livewire\Component;
 class Todos extends Component
 {
     public $todo = '';
-    public $todos = [
-        'customise terminal',
-        'lean livewire'
-    ];
+    public $todos = [];
+    // public $todos = [
+    //     'customise terminal',
+    //     'lean livewire'
+    // ];
+
+    // initialise properies
+    public function mount()
+    {
+        // $this->todos = Todo::all;
+        $this->todos = [
+            'customise terminal',
+            'lean livewire'
+        ];
+    }
+
+    // public function updated($property, $value)
+    // {
+    //     $this->$property = strtoupper($value);
+    // }
+    public function updatedTodo($value)
+    {
+        $this->todo = strtoupper($value);
+    }
 
     public function add()
     {
