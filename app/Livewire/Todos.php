@@ -2,8 +2,10 @@
 
 namespace App\Livewire;
 
+use Livewire\Attributes\Title;
 use Livewire\Component;
 
+#[Title('Todos')]
 class Todos extends Component
 {
     public $todo = '';
@@ -27,10 +29,12 @@ class Todos extends Component
     // {
     //     $this->$property = strtoupper($value);
     // }
-    public function updatedTodo($value)
-    {
-        $this->todo = strtoupper($value);
-    }
+
+    /* where validation would happen */
+    // public function updatedTodo($value)
+    // {
+    //     $this->todo = strtoupper($value);
+    // }
 
     public function add()
     {

@@ -2,19 +2,26 @@
 
 namespace App\Livewire;
 
+use Livewire\Attributes\Title;
 use Livewire\Component;
 
+#[Title('Counter')]
 class Counter extends Component
 {
     public $count = 0;
 
     // action == controller 
     // any public function is callable
-    public function increment($by)
+    public function increment()
     {
-        // $this->count++;
-        $this->count = $this->count + $by;
+        $this->count++;
+
     }
+    // public function increment($by)
+    // {
+    //     // $this->count++;
+    //     $this->count = $this->count + $by;
+    // }
 
     public function decrement($by)
     {
